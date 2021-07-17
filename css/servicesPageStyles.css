@@ -1,0 +1,147 @@
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: "Open Sans", 'sans-serif', 'Arial';
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  border-radius: 100px 0px 100px 0px;
+  /* margin-left: -14px; */
+ }
+
+.tablink:hover {
+  background-color: #ddd;
+}
+
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 120px 20px 100px 20px;
+  height: 100%;
+}
+
+#subService{
+	color: #212529;
+}
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:40px;   /* Height of the footer */
+   background-color: lightgoldenrodyellow;
+   color: #212529;
+   text-align: center;
+}
+
+#Plumber {background-color: lightgoldenrodyellow;}
+#Carpenter {background-color: lightgoldenrodyellow;}
+#Electrician {background-color: lightgoldenrodyellow;}
+#Painter {background-color: lightgoldenrodyellow;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  width: 20%;
+  height: 300px;   
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: #555;
+  color: white;
+  padding: 16px 16px;  
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;  
+  float: left;
+  width: 100%;
+  border-radius: 40px 0px 0px 0px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #009970;
+}
+
+/* Style the tab content */
+.tab_content {
+  float: left;
+  padding: 12px 12px;
+  width: 80%;
+  border-left: none;
+  height: 450px;
+  border-radius: 0px 30px 30px 30px;  
+}
+
+
+#PipeTapFitting {background-color: #009970;}
+#WaterLeakages {background-color: #009970;}
+#RepairAndFixes {background-color: #009970; padding: 30px 50px;}
+#InstallationServices {background-color: #009970; padding: 30px 50px;}
+#CS1 {background-color: #009970;}
+#CS2 {background-color: #009970;}
+#CS3 {background-color: #009970;}
+#HomePainting {background-color: #009970;}
+#WaterProofing {background-color: #009970;}
+#TexturedWalls {background-color: #009970; padding: 30px 50px;}
+#EnamelPainting {background-color: #009970; padding: 30px 50px;}
+
+
+header{ background:lightgoldenrodyellow; width:100%; float: left; padding: 20px 20px; 
+margin-top: 0px; position: fixed; }
+.logo{ width:20%; float:left; font-size:20px; font-weight: bold; color:#212529;}
+.menu{ width:80%; float:left; max-width:100%; font-size: 0px;}
+.logo img{border-radius: 10px 10px 10px 10px; height: -50%; align: center; border: 3px solid white;}
+.container{max-width:100%;}
+.home{font-size:15px; color:#212529; text-align=right; padding:0px 0px 0px 92%;}
+a:hover, a:focus{color:#002060; font-weight:bolder; text-decoration: none;}
+/* Style the add/submit buttons */
+#submit {
+  display: block;
+  background-color: #555;
+  color: white;
+  padding: 12px 12px;  
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;  
+  float: left;
+  width: 90px;
+  border-radius: 30px 30px 30px 30px;
+}
+img {
+border-radius: 30px 30px 30px 30px;
+}
+#sink, #washroom, #bed, #cupboards{
+display: inline-block;
+padding: 15px 30px;
+}
+#Electrician h3{
+	color:#212529;
+}

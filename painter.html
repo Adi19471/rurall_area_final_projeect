@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, 
+shrink-to-fit=no">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="
+https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<title>Rural Area Help Desk</title>
+
+<link rel="stylesheet" href="./css/servicesPageStyles.css">
+						<!-- <style> </style> -->
+</head>
+<body>
+<header>
+        <div class="container">
+		<a class="home" href="./index.html">Go to Home..!</a>
+            <div class="logo"><img src="./images/rhd_logo.png"></img>&nbsp;Rural Help Desk</div>
+            
+            <div class="menu">
+                <button class="tablink" onclick="openPage('Plumber', this, 
+'#009970')">PLUMBER</button>
+<button class="tablink" onclick="openPage('Carpenter', this, '#009970')">CARPENTER
+</button>
+<button class="tablink" onclick="openPage('Electrician', this, '#009970')">
+ELECTRICIAN</button>
+<button class="tablink" onclick="openPage('Painter', this, '#009970')" id="defaultOpen">PAINTER
+</button>
+            </div>
+             
+         </div>
+        
+        </header>
+
+<div id="Plumber" class="tabcontent">
+  
+  <h6 id="subService">Choose service</h6>
+  
+  <div class="tab">
+  <button class="tablinks" onclick="openSubPage(event, 'PipeTapFitting')">Pipe/Tap Fitting</button>
+  <button class="tablinks" onclick="openSubPage(event, 'WaterLeakages')">Water 
+Leakages</button>
+  <button class="tablinks" onclick="openSubPage(event, 'RepairAndFixes')">Repair 
+& Fixes</button>
+  <button class="tablinks" onclick="openSubPage(event, 'InstallationServices')">
+Installation Services</button>
+</div>
+
+<div id="PipeTapFitting" class="tab_content">
+  <div id="sink">
+  <img src="./images/sink.jpg"></img>
+  <h3>Pipe/Tap fitting in sink<br>
+  <h6>Price starting INR 349 onwards..</h6></h3>
+  <button id="submit" onsubmit="openServiceAddedPage('addedService', 'LightBlue')">Add</button></div>
+<div id="washroom">
+<img src="./images/bathroom.jpg"></img>
+  <h3>Pipe/Tap fixing in washroom<br>
+  <h6>Price starting INR 699 onwards..</h6></h3>
+  <button id="submit" onsubmit="openServiceAddedPage('addedService', 'LightBlue')">Add</button> </div> 
+</div>
+
+<div id="WaterLeakages" class="tab_content">
+  <div id="sink">
+  <img src="./images/sink.jpg"></img>
+  <h3>Water leakage in sink<br>
+  <h6>Price starting INR 249 onwards..</h6></h3>
+  <button id="submit" onsubmit="openServiceAddedPage('addedService', 'LightBlue')">Add</button></div>
+<div id="washroom">
+<img src="./images/bathroom.jpg"></img>
+  <h3>Water leakage in washroom<br>
+  <h6>Price starting INR 499 onwards..</h6></h3>
+  <button id="submit" onsubmit="openServiceAddedPage('addedService', 'LightBlue')">Add</button> </div>
+</div>
+
+<div id="RepairAndFixes" class="tab_content">
+  <img src="./images/water.jpg"></img>
+  <h3>Motor Air Cavity Removal<br>
+  <h6>Price starting INR 149 onwards..</h6></h3>
+  <button id="submit" onsubmit="openServiceAddedPage('addedService', 'LightBlue')">Add</button>  
+</div>
+
+<div id="InstallationServices" class="tab_content">
+<img src="./images/plumber.jpg"></img>
+  <h3>Motor Installation<br>
+  <h6>Price starting INR 419 onwards..</h6></h3>
+  <button id="submit" onclick="openServiceAddedPage('addedService', 'LightGrey')">Add</button>
+</div>
+</div>
+
+<div id="Carpenter" class="tabcontent">
+    <h6 id="subService">Choose service</h6>
+  
+  <div class="tab">
+  <button class="tablinks" onclick="openSubPage(event, 'CS1')">Repairs & Fixes</button>
+  <button class="tablinks" onclick="openSubPage(event, 'CS2')">New Furniture Making
+</button>
+  <button class="tablinks" onclick="openSubPage(event, 'CS3')">Other Wood Work
+</button>
+</div>
+
+<div id="CS1" class="tab_content">
+  <div id="bed">
+  <img src="./images/bed.jpg"></img>
+  <h3>Bed Support Repair<br>
+  <h6>Price starting INR 199 onwards..</h6></h3>
+  <ul>
+	<li>Includes mattress support repair</li>
+  <li>Includes minor repair of either single leg or headboard</li>
+  <li>Major repairs or repairs requiring dismantling bed as per quotation</li>
+  <li>Price does not include spare parts cost</li>
+  </ul>
+  <button id="submit" onclick="openServiceAddedPage('addedService', 'LightGrey')">Add</button>
+</div>
+</div>
+
+<div id="CS2" class="tab_content">
+  <div id="bed">
+  <img src="./images/bed.jpg"></img>
+  <h3>Bed<br>
+  <h6>Price starting INR 2999 onwards..</h6></h3>
+  <button id="submit" onclick="openServiceAddedPage('addedService', 'LightGrey')">Add</button>
+</div>
+
+<div id="cupboards">  
+  <img src="./images/cupboard.jpg"></img>
+  <h3>Cupboards and Doors<br>
+  <h6>Price starting INR 3999 onwards..</h6></h3>
+  <button id="submit" onclick="openServiceAddedPage('addedService', 'LightGrey')">Add</button>
+</div>
+</div>
+
+
+
+<div id="CS3" class="tab_content">
+  <img src="./images/noservice.jpg"></img>
+  <h3>Sorry, no services are available yet..!<br>
+</div>
+</div>
+
+<div id="Electrician" class="tabcontent">
+  <img src="./images/noservice.jpg"></img>
+  <h3>Sorry, no services are available yet..!
+</div>
+
+<div id="Painter" class="tabcontent">
+  <h6 id="subService">Choose service</h6>
+  
+  <div class="tab">
+  <button class="tablinks" onclick="openSubPage(event, 'HomePainting')" id="defaultSubOpen">Home Painting</button>
+  <button class="tablinks" onclick="openSubPage(event, 'WaterProofing')">Water Proofing</button>
+  <button class="tablinks" onclick="openSubPage(event, 'TexturedWalls')">Textured Walls</button>
+  <button class="tablinks" onclick="openSubPage(event, 'EnamelPainting')">Enamel Painting</button>
+</div>
+
+<div id="HomePainting" class="tab_content">
+  <div id="sink">
+  <img src="./images/asianpaints.png"></img>
+  <h3>Asian Paints<br>
+  </h3>
+  <button id="submit" onsubmit="openServiceAddedPage('addedService', 'LightBlue')">Add</button></div>
+<div id="washroom">
+<img src="./images/dulux.jpg"></img>
+  <h3>Dulux<br>
+  </h3>
+  <button id="submit" onsubmit="openServiceAddedPage('addedService', 'LightBlue')">Add</button> </div> 
+<div id="washroom">
+<img src="./images/berger.jpg"></img>
+  <h3>Berger<br>
+  </h3>
+  <button id="submit" onsubmit="openServiceAddedPage('addedService', 'LightBlue')">Add</button> </div> 
+</div>
+			<div id="WaterProofing" class="tab_content">
+				<img src="./images/noservice.jpg"></img>
+				<h3>
+					Sorry, no services are available yet..!
+					<br>
+			</div>
+			
+			<div id="TexturedWalls" class="tab_content">
+				<img src="./images/noservice.jpg"></img>
+				<h3>
+					Sorry, no services are available yet..!
+					<br>
+			</div>
+			
+			<div id="EnamelPainting" class="tab_content">
+				<img src="./images/noservice.jpg"></img>
+				<h3>
+					Sorry, no services are available yet..!
+					<br>
+			</div>
+</div>
+
+
+<footer id="footer">
+<h3>We service from 9AM to 9 P.M. Our professional will get in touch with you an 
+hour before the service.</h3>
+</footer>
+
+<script src="./js/servicePageOpen.js"></script>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+></script>
+
+<!-- Popper JS -->
+<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"
+></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+></script>
+
+</body>
+</html> 

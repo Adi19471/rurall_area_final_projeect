@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    
+	<title>Rural Area Help Desk</title>
+	
+	<link rel="stylesheet" href="./css/registerAsProfessional.css">
+</head>
+
+<body>
+<header>
+    <!-- header page package -->
+    <div class="container">
+        
+            <div class="logo"><img src="./images/rhd_logo.png"></img>&nbsp;Rural Help Desk</div>
+            <div class="menu"><center>Register as Professional</center></div>
+			<div class="home"><a href="./index.html">Back to Home..!</a></div>
+    </div>
+</header>	
+    
+	
+	<div class="realbody">
+	<form action="" method="POST">
+	<br><br><br><br>
+    <!--table list disply- -->
+		<strong><label id="place">Please choose your place!</label></strong>
+        <table class="table-places text-center">
+		<tbody class="tbody-places">
+                <tr class="tr-places">
+                    <td class="td-places"><input type="button" id="place" class="place" value="Kurnool" onclick="selectPlace('place', this, 'orange')"></td>
+                    <td class="td-places"><input type="button" id="place" class="place" value="Adoni" onclick="selectPlace('place', this, 'orange')"></td>
+                    <td class="td-places"><input type="button" id="place" class="place" value="Dhone" onclick="selectPlace('place', this, 'orange')"></td>
+
+                </tr>
+                <tr class="tr-places">
+
+                    <td class="td-places"><input type="button" id="place" class="place" value="Hyderabad" onclick="selectPlace('place', this, 'orange')"></td>
+                    <td class="td-places"><input type="button" id="place" class="place" value="Manikonda" onclick="selectPlace('place', this, 'orange')"></td>
+                    <td class="td-places"><input type="button" id="place" class="place" value="Hitech City" onclick="selectPlace('place', this, 'orange')"></td>
+                </tr>
+                <tr class="tr-places">
+
+                    <td class="td-places"><input type="button" id="place" class="place" value="Ananthapuram" onclick="selectPlace('place', this, 'orange')"></td>
+                    <td class="td-places"><input type="button" id="place" class="place" value="Tadipatri" onclick="selectPlace('place', this, 'orange')"></td>
+                    <td class="td-places"><input type="button" id="place" class="place" value="Bangalore" onclick="selectPlace('place', this, 'orange')"></td>
+                </tr>
+            </tbody>
+        </table>
+		<br>
+		
+		<strong><label id="place">What do you do?</label></strong>
+		<table class="table-professions">
+		<tbody class="tbody-professions">
+                <tr class="tr-professions">
+                    <td class="td-professions"><input type="button" id="profession defaultOpen" class="profession" value="Carpenter" onclick="selectProfession('profession', this, 'orange')"></td>
+					<td class="td-professions"><input type="button" id="profession" class="profession" value="Electrician"onclick="selectProfession('profession', this, 'orange')"></td>
+					<td class="td-professions"><input type="button" id="profession" class="profession" value="Painter"onclick="selectProfession('profession', this, 'orange')"></td>
+					<td class="td-professions"><input type="button" id="profession" class="profession" value="Plumber"onclick="selectProfession('profession', this, 'orange')"></td>
+                </tr>
+            </tbody>
+		</table>
+<br><br>
+               <strong> Name: &nbsp;<input id="name" class= "userDetails" type="text" name="name" placeholder="Enter your name" required>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone Number: &nbsp;<input id="phoneNumber" class= "userDetails" type="number" name="phone" placeholder="Enter phone number" required>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email Address: &nbsp;<input class= "userDetails" type="email" name="email" placeholder="Enter your email ID"></strong>
+                <br><br>
+                    <button id="submit" class="btn btn-info btn-sm" value="Get in Touch" onclick="regAsProf();">Get in Touch</button>
+                </center>
+            </form>
+        </div>
+
+<footer id="footer">
+<h3>We service from 9AM to 9 P.M. Please <a href="./contactUs.html"><strong>reach us</strong></a> whenever required..!</h3>
+</footer>
+
+<script src="./js/servicePageOpen.js"></script>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+></script>
+
+<!-- Popper JS -->
+<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"
+></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+></script>
+</body>
+
+</html>
